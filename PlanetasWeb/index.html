@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Corredores</title>
+</head>
+<body>
+    <h1 style="font-size:50px; text-align:center" class="has-text-primary-dark">EJERCICIO DE PLANETAS</h1><br><br>
+    
+    <div class="container">
+        <div class="columns">
+            <div class="column">
+                <div class="table-container">
+                <table class="table is-bordered is-outlined is-fullwidth">
+                    <thead class="has-background-danger">
+                        <tr>
+                            <th class="has-text-white"># de planeta</th>
+                            <th class="has-text-white">Planeta</th>
+                            <th class="has-text-white">Distancia (año luz)</th>
+                            <th class="has-text-white">Tamaño</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td><input class="input is-rounded numeroPlaneta" type="number" id="numeroP_1" min="0"></td>
+                        <td><input class="input is-rounded nombrePlaneta" type="text" id="nombreP_1" min="0"></td>
+                        <td><input class="input is-rounded distanciaPlaneta" type="number" id="distancia_1" min="0"></td>
+                        <td><input class="input is-rounded tamanioPlanetas" type="number" id="tamanioP_1" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input is-rounded numeroPlaneta" type="number" id="numeroP_2" min="0"></td>
+                        <td><input class="input is-rounded nombrePlaneta" type="text" id="nombreP_2" min="0"></td>
+                        <td><input class="input is-rounded distanciaPlaneta" type="number" id="distancia_2" min="0"></td>
+                        <td><input class="input is-rounded tamanioPlanetas" type="number" id="tamanioP_2" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input is-rounded numeroPlaneta" type="number" id="numeroP_3" min="0"></td>
+                        <td><input class="input is-rounded nombrePlaneta nombrePlaneta" type="text" id="nombreP_3" min="0"></td>
+                        <td><input class="input is-rounded distanciaPlaneta" type="number" id="distancia_3" min="0"></td>
+                        <td><input class="input is-rounded tamanioPlanetas" type="number" id="tamanioP_3" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input is-rounded numeroPlaneta" type="number" id="numeroP_4" min="0"></td>
+                        <td><input class="input is-rounded nombrePlaneta" type="text" id="nombreP_4" min="0"></td>
+                        <td><input class="input is-rounded distanciaPlaneta" type="number" id="distancia_4" min="0"></td>
+                        <td><input class="input is-rounded tamanioPlanetas" type="number" id="tamanioP_4" min="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="input is-rounded numeroPlaneta" type="number" id="numeroP_5" min="0"></td>
+                        <td><input class="input is-rounded nombrePlaneta" type="text" id="nombreP_5" min="0"></td>
+                        <td><input class="input is-rounded distanciaPlaneta" type="number" id="distancia_5" min="0"></td>
+                        <td><input class="input is-rounded tamanioPlanetas" type="number" id="tamanioP_5" min="0"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <div class="container1">
+        <div class="columns">
+            <div class="column">
+        <button class="button is-danger is-normal is-outlined item" id="btnEnviar">Enviar</button>
+        <button class="button is-danger is-normal is-outlined item" id="btnOrdenarValores">Ordernar Valores</button>
+        <button class="button is-danger is-normal is-outlined item" id="btnFiltrarDistancia">Filtrar</button>
+        <button class="button is-danger is-normal is-outlined item" id="btnBuscarPlaneta">Buscar</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="./scripts/script.js" type="module" role=""></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+</body>
+
+</html>
