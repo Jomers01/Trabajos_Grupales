@@ -1,0 +1,14 @@
+{
+  "mascotas": [
+    {
+      "categoria": "gato",
+      "nombre": "Oreo",
+      "raza": "Criollo",
+      "edad": "6",
+      "ubicacion": "tv 78",
+      "imagen": "https://petshopduke.com/wp-content/uploads/2020/09/logo.png",
+      "usuario": "Jose Garcia",
+      "id": 1
+    }
+  ]
+}

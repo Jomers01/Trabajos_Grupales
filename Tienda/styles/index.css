@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: lightpink;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-logo{
+    margin-top: 70px;
+}
+
+.container-iniciar{
+    margin-top: 20px;
+    color: black;
+    font-size: 1.2em;
+}
+
+.title-iniciar{
+    margin-top: 50px;
+    color:black;
+}
+
+.fa-google{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+}
+
+.google{
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 6px;
+    padding: 15px 15px 15px 60px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    cursor: pointer;
+    color: black;
+}
+
+.linea{
+    margin-top: 15px;
+    background-color: black;
+}
+
+.container-input{
+    margin-top: 20px;
+}
+
+.label{
+    color: black;
+}
+
+.email-input{
+    margin-top: 10px;
+    padding: 12px 70px 15px 10px;
+}
+
+.btnIniciar{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 100px;
+    background-color: #EF4565;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btnIniciar i{
+    font-size: 22px;
+    color: black;
+}
+
+.container-registro{
+    margin-top: 30px;
+}
+
+.RecupContraseña{
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.RecupContraseña a{
+    color: #2CB67D;
+}

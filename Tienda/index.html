@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles -->
+    <link rel="stylesheet" href="./fontawesome v5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Duke PetShop</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img src="https://petshopduke.com/wp-content/uploads/2020/09/logo.png" alt="Logo" width="200px">
+        </div>
+        <h2 class="title-iniciar">Iniciar Sesion</h2>
+        <div class="container-iniciar" id="google"> 
+            <i class="fab fa-google"></i>
+            <button class="google">Continuar con Google</button>
+            <hr class="linea">
+        </div>
+        <div class="container-input">
+            <label for="Email" class="label">Correo Electronico:</label><br>
+            <input type="email" id="Email" class="email-input" placeholder="Ingrese su correo eléctronico"><br>
+            <button id="btnIniciar" class="btnIniciar"><i class="fas fa-arrow-right"></i></button>
+            
+        </div>
+        <div class="container-registro">
+            <!-- <span class="RecupContraseña"><a href="#">¿Se te olvido la contraseña?</a></span> -->
+            <span class="RecupContraseña">¿Aun no tienes cuenta? <a href="#" id="btnSingUp">Incribirse</a></span>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="./script/index.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "Usuarios": [
+    {
+      "categoria": "Vendedor",
+      "nombre": "Jose",
+      "email": "Wearponbest@gmail.com",
+      "telefono": "3138987572",
+      "date": "1999-09-15",
+      "producto": "",
+      "id": 1
+    },
+    {
+      "nombre": "Yudith",
+      "email": "yudith@gmail.com",
+      "telefono": "3138987572",
+      "date": "1999-09-15",
+      "tipo": "Comprador",
+      "id": 2
+    }
+  ]
+}
