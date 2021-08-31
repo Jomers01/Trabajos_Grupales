@@ -1,45 +1,80 @@
+//configurar nuestro path
 const path = require('path');
-const HTMLWebpackPlugin = require("html-webpack-plugin");
+//plugin que instalamos
+const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+
 module.exports = {
-  entry: [
-      '@babel/polyfill',
-      './src/app/index.js'],
-  mode: "development",
+  //entrada , cual va a ser mi elemento principal, punto de entrada
+  entry: './src/index.js',
+  //a donde quiero empujar mi proyecto ouput
   output: {
-    filename: 'js/app.bundle.js',
+    //saber donde me encuentro, directorio donde esta el proyecto
+    //y ahi crea una carpeta dist donde se va a guardar nuestro
+    //proyecto
     path: path.resolve(__dirname, 'build'),
+    //lamar a mi compilado de JS una asignacion de nombre, como se va
+    //a construir
+    filename: 'bundle.js',
   },
-  devServer:{
-    port: 5050
+  //configuracion para saber con que archivos vamos a trabajar
+  resolve: {
+    //extenciones con las cuales estamos trabajando
+    extensions: ['.js', '.jsx'],
   },
+  //modulo donde vamos a tener las reglas de negocio del proyecto
   module: {
+    //definimos las reglas por medio de arreglos
     rules: [
-        {
-            test: /\.js$/,
-            loader: 'babel-loader',
-        },
       {
-        test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
-      }
+        //creamos expresion regular para identificar estos
+        //archivos
+        test: /\.(js|jsx)$/,
+        //vamos a excluir la carpeta de node modules
+        exclude: /node_modules/,
+        //y vamos a utilizar el loder que utilizamos en babel
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+      //identificar los archivos html de nuestro proyecto, entenderlos
+      //y prepararlos
+      {
+        test: /\.html$/,
+        //uso del loader que previamente instalamos
+        use: {
+          loader: 'html-loader',
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+        ],
+      },
     ],
   },
-  plugins:[
+  //agregar plugin que instalamos para entender el archivo index y el que
+  //vamos a generar en la carpeta dist para enviar a produccion
+  plugins: [
+    new HtmlWebPackPlugin({
+      template: './public/index.html',
+      //se va a empujar como
+      filename: './index.html',
+    }),
     new MiniCssExtractPlugin({
-        filename: "css/app.bundle.css"
-      }),
-    new HTMLWebpackPlugin({
-        template: "./src/index.html",
-        minify: {
-          collapseWhitespace: true,
-          removeComments: true,
-          removeRedundantAttributes: true,
-          removeScriptTypeAttributes: true,
-          removeStyleLinkTypeAttributes: true,
-          useShortDoctype: true,
-        }
-      })
-  ]
+      filename: 'assets/[name].css',
+    }),
+  ],
+  devServer: {
+    static: path.join(__dirname, 'build'),
+    compress: true,
+    //Habilitar para poder acceder a la información y mostrar cada una de las rutas
+    historyApiFallback: true,
+    port: 3005,
+  },
 };
