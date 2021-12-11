@@ -1,0 +1,41 @@
+{
+    " inventario " : [
+      {
+        " nombre " : " Camiseta " ,
+        " precio " : " 10000 " ,
+        " descripcion " : " Descripcion" ,
+        " imagen1" : "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427156/sportswear/881850928_1_zye2d0.jpg" ,
+        " imagen2 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427156/sportswear/881850928_2_qvspi0.jpg",
+        " imagen3 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427156/sportswear/881850928_6_eomugh.jpg",
+        " id " : 1
+      },
+      {
+        " nombre " : " Mono " ,
+        " precio " : " 10000 " ,
+        " descripcion " : "describiendo" ,
+        " imagen1" : "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427150/sportswear/881993468_1_ce8nq2.jpg" ,
+        " imagen2 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427150/sportswear/881993468_6_c9y9ae.jpg",
+        " imagen3 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427150/sportswear/881993468_2_sjrkvg.jpg",
+        " id " : 2
+      },
+      {
+        " nombre " : " chica " ,
+        " precio " : " 10000 " ,
+        " descripcion " : " describiendom " ,
+        " imagen1" : "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427151/sportswear/8088977_1_o6vegk.jpg" ,
+        " imagen2 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427151/sportswear/8088977_3_dzobrq.jpg",
+        " imagen3 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427151/sportswear/8088977_4_lrl0kw.jpg",
+        " id " : 3
+      },
+      {
+        " nombre " : " chica monno" ,
+        " precio " : " 10000 " ,
+        " descripcion " : " describiendom " ,
+        " imagen1" : "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427151/sportswear/881847747_1_m3sfcg.jpg" ,
+        " imagen2 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427150/sportswear/881847747_2_m1l8lk.jpg",
+        " imagen3 ": "https://res.cloudinary.com/joh4n4lex4nder/image/upload/v1630427150/sportswear/881847747_5_b1oh52.jpg",
+        " id " : 4
+      }
+      
+    ]
+}
